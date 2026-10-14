@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Наш ресторан</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Tinos:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute"><symbol id="cl" viewBox="0 0 64 52"><path d="M6 40h38M9 40a16 16 0 0132 0M25 22v-4M22 18h6M48 28q4-3 8 0t8 0M48 36q4-3 8 0t8 0M48 44q4-3 8 0t8 0"/></symbol></svg>
+
+<header class="hero" id="home">
+  <nav class="nav wrap">
+    <a class="logo" href="#home" aria-label="logo"><svg viewBox="0 0 44 44" width="46" height="46" fill="none" stroke="#ff6b00" stroke-width="2"><path d="M22 2l20 20-20 20L2 22z"/><path d="M22 11l11 11-11 11-11-11z"/></svg></a>
+    <ul class="menu" id="navlist">
+      <li><a href="#home" data-i18n="n1"></a></li>
+      <li><a href="#menu" data-i18n="n2"></a></li>
+      <li><a href="#about" data-i18n="n3"></a></li>
+      <li><a href="#book" data-i18n="n4"></a></li>
+    </ul>
+    <div class="tel"><b>+999-888-76-54</b><small data-i18n="call"></small></div>
+    <a class="btn" href="#book" data-i18n="book"></a>
+    <div class="lang"><button data-l="ru">RU</button><button data-l="kk">KK</button><button data-l="en">EN</button></div>
+    <button class="burger" id="burger" aria-label="menu"><i></i><i></i><i></i></button>
+  </nav>
+  <div class="wrap">
+    <div class="hero-t">
+      <p class="o" data-i18n="h1"></p>
+      <h1 data-i18n="h2"></h1>
+      <span class="tag" data-i18n="h3"></span><br>
+      <a class="btn" href="#menu" data-i18n="view"></a>
+    </div>
+  </div>
+</header>
+
+<section class="wrap feats">
+  <article class="card rv"><svg class="ic"><use href="#cl"/></svg><h3 data-i18n="f1"></h3><p data-i18n="f1t"></p></article>
+  <article class="card rv"><svg class="ic"><use href="#cl"/></svg><h3 data-i18n="f2"></h3><p data-i18n="f2t"></p></article>
+  <article class="card rv"><svg class="ic"><use href="#cl"/></svg><h3 data-i18n="f3"></h3><p data-i18n="f3t"></p></article>
+</section>
+
+<section class="wrap hist" id="about">
+  <div class="rv">
+    <h2 class="t" data-i18n="hi"></h2>
+    <p data-i18n="hp"></p>
+    <div class="stats"><div><b>93</b><span data-i18n="s1"></span></div><div><b>206</b><span data-i18n="s2"></span></div><div><b>71</b><span data-i18n="s3"></span></div></div>
+  </div>
+  <div class="col rv"><img src="img/about.png" alt=""></div>
+</section>
+
+<section class="ban" id="book">
+  <div class="wrap rv"><h2 data-i18n="bn"></h2><p data-i18n="bt"></p><a class="btn" href="#book" data-i18n="book"></a></div>
+</section>
+
+<section class="wrap dish">
+  <h2 class="t rv" data-i18n="td"></h2>
+  <div class="d-grid">
+    <img class="big rv" src="img/dish-big.jpg" alt="">
+    <ul class="d-list rv" id="dl"></ul>
+  </div>
+</section>
+
+<section class="menu-s" id="menu">
+  <div class="wrap"><h2 class="t rv" data-i18n="tm"></h2><div class="mgrid" id="mg"></div></div>
+</section>
+
+<section class="rev">
+  <div class="wrap" id="slide">
+    <p data-i18n="rv"></p>
+    <img src="img/avatar.jpg" alt="">
+    <b data-i18n="rn"></b><span data-i18n="rl"></span>
+    <div class="dots" id="dots"><i class="on"></i><i></i><i></i></div>
+  </div>
+</section>
+
+<section class="wrap gsec">
+  <h2 class="t rv" data-i18n="tg"></h2>
+  <div class="gal">
+    <div class="gi w rv"><img src="img/g-wine.png" alt=""></div>
+    <div class="gi rv"><img src="img/g-coffee.png" alt=""></div>
+    <div class="gi rv"><img src="img/g-soup.jpg" alt=""></div>
+    <div class="gi rv"><img src="img/g-coffee.png" alt=""></div>
+    <div class="gi rv"><img src="img/g-soup.jpg" alt=""></div>
+    <div class="gi w rv"><img src="img/g-wine.png" alt=""></div>
+  </div>
+</section>
+
+<section class="wrap gsec">
+  <h2 class="t rv" data-i18n="tc"></h2>
+  <div class="cwrap rv">
+    <button class="arr" id="pv" aria-label="prev">&#8249;</button>
+    <div class="cooks" id="ck"></div>
+    <button class="arr" id="nx" aria-label="next">&#8250;</button>
+  </div>
+</section>
+
+<footer class="foot"><p>© 2026 · +999-888-76-54 · <span data-i18n="ft"></span></p></footer>
+
+<button id="top" aria-label="up">&#8593;</button>
+<script src="js/script.js"></script>
+</body>
+</html>
